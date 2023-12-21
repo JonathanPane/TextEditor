@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_pane" pickOnBounds="false" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.texteditor.controllers.MainPageController">
+   <children>
+      <MenuBar fx:id="menu_bar" focusTraversable="false" layoutY="2.0" pickOnBounds="false" prefHeight="25.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#file" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#open_file" text="Открыть" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#save_file" text="Сохранить" />
+                  <MenuItem mnemonicParsing="false" onAction="#save_file_as" text="Сохранить как" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Закрыть" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="text_field" focusTraversable="false" layoutY="25.0" pickOnBounds="false" prefHeight="373.0" prefWidth="600.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font></TextArea>
+   </children>
+</AnchorPane>
